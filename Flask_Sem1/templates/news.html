@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Title</title>
+    <h1>Моя первая страница</h1>
+    <p class="text"> Привет, мир! </p>
+</head>
+<body>
+    {% for item in news_block %}
+    <div class="news">
+
+        <h1>{{item.title}}</h1>
+        {{item.description}}
+        {{item.data}}
+
+    </div>
+    {% endfor %}
+</table>
+</body>
+</html>
